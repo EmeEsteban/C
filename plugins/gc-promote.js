@@ -19,6 +19,9 @@ const handler = async (m, {conn, usedPrefix, text}) => {
       var user = number + '@s.whatsapp.net';
     }
   } catch (e) {
+} finally {
+    conn.groupParticipantsUpdate();
+  }
 } 
 };
 handler.help = ['*593xxx*', '*@usuario*', '*responder chat*'].map((v) => 'promote ' + v);
