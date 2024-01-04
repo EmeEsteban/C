@@ -20,7 +20,7 @@ const handler = async (m, {conn, usedPrefix, text}) => {
     }
   } catch (e) {
 } finally {
-    conn.groupParticipantsUpdate([user], 'promote');
+    conn.groupParticipantsUpdate(m.chat, [user], 'promote');
   }
 } 
 };
