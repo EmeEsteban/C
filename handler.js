@@ -1529,14 +1529,14 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*[ ℹ️ ] Este comando solo puede ser utilizado por el propietario del bot.*',
-    owner: '*[ ℹ️ ] Este comando solo puede ser utilizado por el propietario del bot.*',
-    mods: '*[ ℹ️ ] Este comando solo puede ser utilizado por moderadores y el propietario del bot.*',
-    premium: '*[ ℹ️ ] Este comando solo puede ser utilizado por usurios premium y el propietario del bot.*',
-    group: '*[ ℹ️ ] Este comando solo puede ser utilizado en grupos.*',
-    private: '*[ ℹ️ ] Este comando solo puede ser utilizado en el chat privado del bot.*',
-    admin: 'Comando para admins.',
-    botAdmin: 'ℹ️ Para utilizar este comando necesito ser Admin.*',
+    rowner: 'No disponible',
+    owner: 'No disponible',
+    mods: 'Solo admins.',
+    premium: 'No disponible',
+    group: 'Solo grupos',
+    private: 'Solo privado',
+    admin: 'Solo admins',
+    botAdmin: 'ℹ️ Para utilizar este comando necesito ser Admin.',
     unreg: 'ℹ️ Debes estar registrado.\n\nUtiliza el comando: _/verificar nombre.edad_ para registrarte.',
     restrict: 'ℹ️ Este comando desactivado.',
   }[type];
