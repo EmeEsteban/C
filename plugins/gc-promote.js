@@ -21,12 +21,11 @@ const handler = async (m, {conn, usedPrefix, text}) => {
   } catch (e) {
 } finally {
     conn.groupParticipantsUpdate(m.chat, [user], 'promote');
-    conn.reply(m.chat, ` ✅ `, m);
   }
 };
 handler.help = ['*593xxx*', '*@usuario*', '*responder chat*'].map((v) => 'promote ' + v);
 handler.tags = ['group'];
-handler.command = /^(promote|daradmin|darpoder)$/i;
+handler.command = /^(promote|admin|darpoder)$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;
